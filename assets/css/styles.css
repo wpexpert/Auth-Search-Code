@@ -1,0 +1,143 @@
+/*
+* Plugin shortcode styling goes here
+*/
+#sports_card_search_form,
+#sports_card_search_set_name__form {
+    margin-bottom: 1rem;
+}
+
+
+
+.player__profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 0.5rem;
+    background-color: #f7f5f5;
+}
+.inner__section h4 {
+    margin: 0;
+}
+.final__result th {
+    background: #f3f3f3!important;
+    color: #000!important;
+}
+.new__search a:hover {
+    background-color: #000;
+    color: #ffff;
+}
+.new__search a {
+    background-color: #e5b510;
+    color: #0b0b0b;
+    padding: 0.5rem 1.1rem;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.auth_input, .set_input {
+    border: none;
+    outline: none;
+    background: #342e2e;
+    padding: 0.5rem;
+    color: #fff;
+}
+
+:is(#sports_card_search_form, #sports_card_search_set_name__form) input[type="submit"] {
+    border: none;
+    padding: 0.5rem;
+    background: #e5b510;
+    color: #fff;
+}
+
+:is(#sports_card_search_form, #sports_card_search_set_name__form) small {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+#card_output table {
+    width: 100%;
+}
+
+#card_output tr {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+#card_output :is(td, th) {
+    padding: 0.7rem;
+}
+
+#card_output .header {
+    background: #efefef;
+}
+
+.text-error {
+    color: #d23232;
+}
+
+@media (max-width: 375px) {
+    .auth_input {
+        max-width: 10rem;
+    }
+}
+.table__section table, th, td {
+    border: 1px solid #ccc;
+}
+
+.table__section table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+.table__section table th,
+.table__section table td {
+    padding: 6px 8px;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.table__section table th {
+    background: #000;
+    font-weight: 900;
+    text-align: left;
+    white-space: nowrap;
+    color: #ffffffc2;
+    font-size: 16px;
+    font-weight: 700;
+}
+.table__section table tbody tr:nth-child(odd) {
+    background: #f3f3f3;
+}
+
+.table__section .scrollable {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.table__section .scrollable.is-scrollable:after {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50px;
+    height: 100%;
+    border-radius: 10px 0 0 10px/50% 0 0 50%;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.25);
+    content: "";
+}
+.table__section .scrollable > div {
+    overflow-x: auto;
+}
+.table__section .scrollable > div ::-webkit-scrollbar {
+    height: 12px;
+}
+.table__section .scrollable > div ::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.15) inset;
+}
+.table__section .scrollable > div ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 6px;
+}
+.table__section {
+    padding-top: 5.5rem;
+    padding-bottom:3rem;
+}
